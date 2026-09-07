@@ -78,7 +78,7 @@ export default function TharRegalCampPage() {
 
               <div className="overflow-hidden rounded-4xl border border-ink/10 bg-paper">
                 <Image
-                  src="/images/DDS_1123_146.jpg"
+                  src="/images/dinner-on-dunse-photo.jpg"
                   alt="Dining at Thar Regal Camp"
                   width={900}
                   height={700}

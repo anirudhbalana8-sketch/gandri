@@ -78,7 +78,7 @@ export default function SuperiorSwissCampPage() {
 
               <div className="overflow-hidden rounded-4xl border border-ink/10 bg-paper">
                 <Image
-                  src="/images/dinner-on-dunse-photo.jpg"
+                  src="/images/DDS_1123_146.jpg"
                   alt="Dining at the camp"
                   width={900}
                   height={700}

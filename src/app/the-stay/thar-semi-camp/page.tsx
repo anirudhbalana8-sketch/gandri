@@ -18,7 +18,7 @@ export default function TharSemiCampPage() {
       <main className="bg-paper text-ink">
         <section className="relative overflow-hidden bg-night px-5 pb-16 pt-28 text-paper md:px-10 md:pb-24 md:pt-36">
           <Image
-            src="/images/dds.jpg"
+            src="/images/DDS_1123_038.jpg"
             alt="Thar Semi Camp"
             fill
             priority

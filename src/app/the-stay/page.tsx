@@ -6,7 +6,7 @@ export default function Stay() {
     <PageFrame>
       <section className="relative flex min-h-162.5 items-end overflow-hidden bg-night px-5 pb-16 pt-40 text-paper md:px-10 md:pb-24">
         <Image
-          src="https://images.unsplash.com/photo-1518002054494-3a6f94352e9d?auto=format&fit=crop&w=2200&q=90"
+          src="/images/dds-camp1.jpg"
           alt="Luxury camp at sunset"
           fill
           priority

@@ -3,4 +3,62 @@ import { useState } from "react";
 import Image from "next/image";
 import { X } from "lucide-react";
 import { PageFrame, photos } from "@/components/site";
-export default function Gallery() { const [selected, setSelected] = useState<number | null>(null); return <PageFrame><section className="bg-paper px-5 pb-16 pt-40 md:px-10 md:pb-24 md:pt-52"><div className="mx-auto max-w-350"><p className="eyebrow text-terracotta">Postcards from the edge</p><h1 className="mt-5 font-display text-7xl leading-[.8] md:text-9xl">The desert,<br /><em>unfiltered.</em></h1><div className="mt-16 grid gap-3 sm:grid-cols-2 md:grid-cols-3">{photos.map((photo, index) => <button key={photo.src} onClick={() => setSelected(index)} className={`group relative min-h-85 overflow-hidden text-left ${index === 0 ? "md:col-span-2 md:row-span-2 md:min-h-175" : ""}`}><Image src={photo.src} alt={photo.alt} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover transition duration-700 group-hover:scale-105" /><span className="absolute bottom-4 left-4 text-xs text-white opacity-0 transition group-hover:opacity-100">View image</span></button>)}</div></div></section>{selected !== null && <div className="fixed inset-0 z-50 grid place-items-center bg-night/95 p-5" onClick={() => setSelected(null)}><button aria-label="Close gallery" className="absolute right-6 top-6 text-white"><X /></button><div className="relative h-[80vh] w-full max-w-5xl"><Image src={photos[selected].src} alt={photos[selected].alt} fill sizes="90vw" className="object-contain" /></div></div>}</PageFrame>; }
+export default function Gallery() {
+  const [selected, setSelected] = useState<number | null>(null);
+  return (
+    <PageFrame>
+      <section className="bg-paper px-5 pb-16 pt-40 md:px-10 md:pb-24 md:pt-52">
+        <div className="mx-auto max-w-350">
+          <p className="eyebrow text-terracotta">Postcards from the edge</p>
+          <h1 className="mt-5 font-display text-7xl leading-[.8] md:text-9xl">
+            The desert,
+            <br />
+            <em>unfiltered.</em>
+          </h1>
+          <div className="mt-16 grid gap-3 sm:grid-cols-2 md:grid-cols-3">
+            {photos.map((photo, index) => (
+              <button
+                key={photo.src}
+                onClick={() => setSelected(index)}
+                className={`group relative min-h-85 overflow-hidden text-left ${index === 0 ? "md:col-span-2 md:row-span-2 md:min-h-175" : ""}`}
+              >
+                <Image
+                  src={photo.src}
+                  alt={photo.alt}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover transition duration-700 group-hover:scale-105"
+                />
+                <span className="absolute bottom-4 left-4 text-xs text-white opacity-0 transition group-hover:opacity-100">
+                  View image
+                </span>
+              </button>
+            ))}
+          </div>
+        </div>
+      </section>
+      {selected !== null && (
+        <div
+          className="fixed inset-0 z-50 grid place-items-center bg-night/95 p-5"
+          onClick={() => setSelected(null)}
+        >
+          <button
+            aria-label="Close gallery"
+            className="absolute right-6 top-6 text-white"
+          >
+            <X />
+          </button>
+          <div className="relative h-[80vh] w-full max-w-5xl">
+            <Image
+              src={photos[selected].src}
+              alt={photos[selected].alt}
+              fill
+              sizes="90vw"
+              className="object-contain"
+            />
+          </div>
+        </div>
+      )}
+    </PageFrame>
+  );
+}

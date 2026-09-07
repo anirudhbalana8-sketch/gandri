@@ -10,27 +10,32 @@ import { Header } from "./header";
 export type Photo = { src: string; alt: string; className: string };
 export const photos: Photo[] = [
   {
-    src: "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1600&q=85",
+    src: "/images/dangri-camp-cultre-photo.jpg",
     alt: "Sandstone fort glowing in Jaisalmer",
     className: "md:col-span-2 md:row-span-2",
   },
   {
-    src: "https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=1000&q=85",
+    src: "/images/dangri-superior-room-photo.jpg",
     alt: "Camel walking across the Thar desert",
     className: "",
   },
   {
-    src: "https://images.unsplash.com/photo-1518002054494-3a6f94352e9d?auto=format&fit=crop&w=1000&q=85",
+    src: "/images/dds-camp1.jpg",
     alt: "Desert camp at sunset",
     className: "",
   },
   {
-    src: "https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1000&q=85",
+    src: "/images/DDS_1123_146.jpg",
     alt: "Open desert landscape",
     className: "",
   },
   {
-    src: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1000&q=85",
+    src: "/images/dinner-on-dunse-photo.jpg",
+    alt: "Star-filled night sky",
+    className: "",
+  },
+  {
+    src: "/images/dds1.jpg",
     alt: "Star-filled night sky",
     className: "",
   },
