@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-paper: #eee6d5;
+  --color-night: #101a1d;
+  --color-ink: #20282a;
+  --color-sand: #d6a55b;
+  --color-terracotta: #a9543d;
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
+}
+
+body {
+  background: #eee6d5;
+  color: #20282a;
+  font-family: var(--font-body), sans-serif;
+}
+
+.story-since-section {
+  background: #f1eee7;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.08) 0.9px, transparent 0.9px);
+  background-size: 10px 10px;
+}
+
+.story-since-kicker,
+.story-since-title,
+.story-since-copy {
+  font-family: var(--font-display), serif;
+}
+
+.story-since-title {
+  line-height: 0.87;
+  letter-spacing: -0.05em;
+}
+
+.story-since-copy p {
+  margin: 0;
+  text-wrap: pretty;
+}
+
+.history-section {
+  background: #f5f0e8;
+}
+
+.history-section .section-title {
+  font-family: var(--font-display), serif;
+  font-size: clamp(2.8rem, 5vw, 5.6rem);
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  color: #171717;
+}
+
+.font-display { font-family: var(--font-display), serif; }
+.eyebrow { font-size: 10px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; }
+.section-title { font-family: var(--font-display), serif; font-size: clamp(3rem, 6vw, 6.5rem); line-height: .84; letter-spacing: -.03em; }
+em { color: #a9543d; font-style: italic; }
+.field { display: grid; gap: 8px; color: #a9543d; font-size: 10px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+.field input, .field textarea { width: 100%; border-bottom: 1px solid rgb(32 40 42 / 25%); background: transparent; padding: 8px 0; color: #20282a; outline: none; font: 15px var(--font-body); letter-spacing: 0; text-transform: none; }
+.field input:focus, .field textarea:focus { border-color: #a9543d; }
