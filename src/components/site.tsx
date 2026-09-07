@@ -44,6 +44,16 @@ export const photos: Photo[] = [
     alt: "Star-filled night sky",
     className: "",
   },
+   {
+    src: "/images/DDS_1123_182.jpg",
+    alt: "Star-filled night sky",
+    className: "",
+  },
+   {
+    src: "/images/DDS_1123_191.jpg",
+    alt: "Star-filled night sky",
+    className: "",
+  },
 ];
 
 export function WhatsApp() {

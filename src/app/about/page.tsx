@@ -66,7 +66,7 @@ export default function About() {
 
             <div className="relative overflow-hidden rounded-4xl border border-ink/10 bg-paper shadow-[0_24px_60px_rgba(16,26,29,0.08)]">
               <Image
-                src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=1200&q=85"
+                src="/images/dds1.jpg"
                 alt="Camel safari in the Thar"
                 width={900}
                 height={1100}
