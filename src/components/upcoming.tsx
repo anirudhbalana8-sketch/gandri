@@ -6,12 +6,12 @@ import Link from "next/link";
 import { Reveal } from "./site";
 
 const events = [
-  { date: "03", month: "Nov", year: "2026", title: "Desert Lights", detail: "A full-moon evening of music, firelight, and slow dining." },
-  { date: "14", month: "Nov", year: "2026", title: "Dunes & Drums", detail: "A spirited night of folk rhythms beneath the open sky." },
-  { date: "28", month: "Dec", year: "2026", title: "New Year at Dangri", detail: "Welcome the new year with a private table in the Thar." },
-  { date: "08", month: "Jan", year: "2027", title: "Winter Moon Supper", detail: "An intimate Rajasthani feast served under a silver desert sky." },
-  { date: "22", month: "Jan", year: "2027", title: "Dune Stories", detail: "A fireside gathering of folk tales, live music, and local craft." },
-  { date: "06", month: "Feb", year: "2027", title: "Valentine in the Thar", detail: "A private sunset table and an evening made for two." },
+  { date: "09", month: "Nov", year: "2026", title: "Desert Lights", detail: "A full-moon evening of music, firelight, and slow dining." },
+  { date: "25", month: "Dec", year: "2026", title: "Christmas", detail: "Celebrate the holiday season with traditional Rajasthani cuisine and festive entertainment." },
+  { date: "31", month: "Dec", year: "2026", title: "New Year at Dangri", detail: "Welcome the new year with a private table in the Thar." },
+  { date: "14", month: "Jan", year: "2027", title: "Makar Sankranti", detail: "Celebrate the harvest festival with traditional sweets and cultural performances." },
+  { date: "14", month: "Feb", year: "2027", title: "Valentine's Day", detail: "Celebrate love with a romantic evening under the stars." },
+  { date: "18", month: "Feb", year: "2027", title: "Maru Festival", detail: "A celebration of the desert's rich cultural heritage." },
 ];
 
 export function Upcoming() {
