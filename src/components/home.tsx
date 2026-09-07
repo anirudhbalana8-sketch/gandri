@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowDown, MoveRight } from "lucide-react";
-import { ImageTile, Packages, Reveal, Testimonial } from "./site";
+import { Packages, Reveal, Testimonial } from "./site";
 import { BannerCarousel } from "./banner-carousel";
 import { WelcomeStory } from "./welcome-story";
 import { StayHighlights } from "./stay-highlights";
@@ -93,16 +93,6 @@ export function HomePage() {
         </div>
       </section>
             <BannerCarousel />
-
-      <section className="bg-ink px-5 py-5 md:px-10 md:py-10">
-        <div className="mx-auto grid max-w-350 grid-cols-2 gap-2 md:grid-cols-4">
-          <div className="col-span-2 row-span-2">
-            <ImageTile photo={homePhotos[0]} />
-          </div>
-          <ImageTile photo={homePhotos[1]} />
-          <ImageTile photo={homePhotos[2]} />
-        </div>
-      </section>
       <Packages />
       <StayHighlights />
       <Upcoming />

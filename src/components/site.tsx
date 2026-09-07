@@ -25,6 +25,11 @@ export const photos: Photo[] = [
     className: "",
   },
   {
+    src: "/images/image.jpeg",
+    alt: "Open desert landscape",
+    className: "",
+  },
+  {
     src: "/images/DDS_1123_146.jpg",
     alt: "Open desert landscape",
     className: "",
