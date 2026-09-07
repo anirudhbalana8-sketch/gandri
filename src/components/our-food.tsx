@@ -53,6 +53,7 @@ export function OurFood() {
               </AnimatePresence>
             </div>
           </div>
+          
           <motion.div animate={{ rotate: [0, 4, 0] }} transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }} className="absolute -bottom-5 -right-3 grid h-24 w-24 place-items-center rounded-full bg-sand text-center text-[10px] uppercase leading-4 tracking-widest text-night md:-right-8">Taste<br />Rajasthan</motion.div>
         </Reveal>
         <Reveal delay={0.15}>
