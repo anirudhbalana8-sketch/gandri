@@ -40,6 +40,16 @@ export const photos: Photo[] = [
     className: "",
   },
   {
+    src: "/images/thar-regal.jpeg",
+    alt: "thar regal ",
+    className: "",
+  },
+  {
+    src: "/images/thar-semi.jpeg",
+    alt: "Thar semi camp room",
+    className: "",
+  },
+  {
     src: "/images/dds1.jpg",
     alt: "Star-filled night sky",
     className: "",
@@ -138,7 +148,7 @@ export const packages = [
     name: "Thar Semi Camp",
     price: "₹7,000",
     detail: "Double occupancy",
-    image: "/images/DDS_1123_149.jpg",
+    image: "/images/thar-semi.jpeg",
     alt: "Wide open Thar desert landscape",
     slug: "/the-stay/thar-semi-camp",
   },
@@ -146,7 +156,7 @@ export const packages = [
     name: "Thar Regal Camp",
     price: "₹11,000",
     detail: "Double occupancy",
-    image: "/images/DDS_1123_156.jpg",
+    image: "/images/thar-regal.jpeg",
     alt: "Luxury desert camp beside the dunes",
     slug: "/the-stay/thar-regal-camp",
   },
@@ -178,19 +188,23 @@ export function Packages() {
               delay={index * 0.1}
               className="bg-paper p-7 md:p-9"
             >
-              <div className="relative -mx-7 -mt-9 mb-7 h-55 overflow-hidden md:-mx-9 md:-mt-9">
-                <Image
-                  src={item.image}
-                  alt={item.alt}
-                  fill
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                  className="object-cover transition duration-700 hover:scale-105"
-                />
-              </div>
+              <Link href={item.slug} className="block">
+                <div className="relative -mx-7 -mt-9 mb-7 h-55 overflow-hidden md:-mx-9 md:-mt-9">
+                  <Image
+                    src={item.image}
+                    alt={item.alt}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-cover transition duration-700 hover:scale-105"
+                  />
+                </div>
+              </Link>
               <p className="text-xs text-terracotta">0{index + 1}</p>
-              <h3 className="mt-8 max-w-47.5 font-display text-3xl leading-none">
-                {item.name}
-              </h3>
+              <Link href={item.slug} className="mt-8 block max-w-47.5 font-display text-3xl leading-none text-ink transition-colors hover:text-terracotta">
+                <h3>
+                  {item.name}
+                </h3>
+              </Link>
               <div className="mt-10 flex items-end justify-between border-t border-ink/15 pt-4">
                 <span className="text-3xl font-semibold tracking-tight md:text-4xl">
                   {item.price}

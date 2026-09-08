@@ -90,7 +90,7 @@ export default function TharRegalCampPage() {
             <div className="mt-20 grid gap-10 md:grid-cols-2 md:items-center">
               <div className="overflow-hidden rounded-4xl border border-ink/10 bg-paper">
                 <Image
-                  src="/images/DDS_1123_156.jpg"
+                  src="/images/thar-regal.jpeg"
                   alt="Hospitality at Thar Regal Camp"
                   width={900}
                   height={700}

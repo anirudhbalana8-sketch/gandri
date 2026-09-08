@@ -91,7 +91,7 @@ export default function TharSemiCampPage() {
             <div className="mt-20 grid gap-10 md:grid-cols-2 md:items-center">
               <div className="overflow-hidden rounded-4xl border border-ink/10 bg-paper">
                 <Image
-                  src="/images/DDS_1123_149.jpg"
+                  src="/images/thar-semi.jpeg"
                   alt="Hospitality at Thar Semi Camp"
                   width={900}
                   height={700}
