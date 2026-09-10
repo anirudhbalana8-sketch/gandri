@@ -30,7 +30,7 @@ export const photos: Photo[] = [
     className: "",
   },
   {
-    src: "/images/DDS_1123_146.jpg",
+    src: "/images/THAR-SEMI-SUITS-OUTFIT.jpg",
     alt: "Open desert landscape",
     className: "",
   },
@@ -64,6 +64,38 @@ export const photos: Photo[] = [
     alt: "Star-filled night sky",
     className: "",
   },
+  {
+    src: "/images/explore-jaislmer.jpeg",
+    alt: "Star-filled night sky",
+    className: "",
+  },
+    {
+    src: "/images/bada-bagh.jfif",
+    alt: "Star-filled night sky",
+    className: "",
+  },
+   {
+    src: "/images/dds.jpg",
+    alt: "dangari dessert camp",
+    className: "",
+  },
+   {
+    src: "/images/DDS_1123_045.jpg",
+    alt: "Star-filled night sky",
+    className: "",
+  },
+   {
+    src: "/images/jais-old-bazar.avif",
+    alt: "Star-filled night sky",
+    className: "",
+  },
+   {
+    src: "/images/jais-sunset-fort.jpg",
+    alt: "jaislmer sunset fort ",
+    className: "",
+  },
+
+
 ];
 
 export function WhatsApp() {
@@ -138,7 +170,7 @@ export function Reveal({
 export const packages = [
   {
     name: "Superior Swiss Camps",
-    price: "₹5,000",
+    price: "₹6,000",
     detail: "Double occupancy",
     image: "/images/dangri-superior-room-photo.jpg",
     alt: "Swiss camp glowing at sunset",
@@ -146,7 +178,7 @@ export const packages = [
   },
   {
     name: "Thar Semi Camp",
-    price: "₹7,000",
+    price: "₹8,000",
     detail: "Double occupancy",
     image: "/images/thar-semi.jpeg",
     alt: "Wide open Thar desert landscape",
@@ -154,7 +186,7 @@ export const packages = [
   },
   {
     name: "Thar Regal Camp",
-    price: "₹11,000",
+    price: "₹12,000",
     detail: "Double occupancy",
     image: "/images/thar-regal.jpeg",
     alt: "Luxury desert camp beside the dunes",

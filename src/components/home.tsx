@@ -8,23 +8,6 @@ import { StayHighlights } from "./stay-highlights";
 import { Upcoming } from "./upcoming";
 import { OurFood } from "./our-food";
 
-const homePhotos = [
-  {
-    src: "/images/dds-camp1.jpg",
-    alt: "Camel walking across the Thar desert",
-    className: "",
-  },
-  {
-    src: "/images/dds1.jpg",
-    alt: "Desert camp at sunset",
-    className: "",
-  },
-  {
-    src: "/images/dds.jpg",
-    alt: "Open desert landscape",
-    className: "",
-  },
-];
 
 export function HomePage() {
   return (

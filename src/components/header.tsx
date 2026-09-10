@@ -5,8 +5,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowUpRight, Menu, X } from "lucide-react";
-
-const navItems = ["About", "The Stay", "Gallery", "Reviews", "Contact"];
+const navItems = ["About", "The Stay", "Facilities", "Explore", "Gallery", "Reviews", "Contact"];
 
 export function Header() {
   const [open, setOpen] = useState(false);

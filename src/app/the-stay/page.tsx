@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { PageFrame, Packages, Reveal } from "@/components/site";
+import { PageFrame, Packages } from "@/components/site";
 import { OurFood } from "@/components/our-food";
 export default function Stay() {
   return (
