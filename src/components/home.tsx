@@ -3,11 +3,10 @@ import Link from "next/link";
 import { ArrowDown, MoveRight } from "lucide-react";
 import { Packages, Reveal, Testimonial } from "./site";
 import { BannerCarousel } from "./banner-carousel";
-import { WelcomeStory } from "./welcome-story";
 import { StayHighlights } from "./stay-highlights";
 import { Upcoming } from "./upcoming";
 import { OurFood } from "./our-food";
-
+import { HomeDiscover } from "./home-discover";
 
 export function HomePage() {
   return (
@@ -54,32 +53,45 @@ export function HomePage() {
           <Reveal>
             <p className="eyebrow text-terracotta">Not just a night away</p>
             <h2 className="section-title mt-4">
-              Where the
+              Welcome to Dangri Desert
               <br />
-              <em>desert opens up.</em>
+              <em>Safari Camps, Jaisalmer</em>
             </h2>
           </Reveal>
           <Reveal delay={0.15}>
-            <p className="max-w-lg text-lg leading-8 text-ink/70">
-              Dangri is a family story told in sand. From a single camel safari
-              in 1985 to a camp that has welcomed travellers from every corner
-              of the world, our way of hospitality stays wonderfully personal.
+            <p className=" text-lg leading-8 text-ink/70">
+              Escape to the golden heart of Rajasthan at Dangri Desert Safari
+              Camps, located in the famous Sam Sand Dunes, approximately 40 km
+              from Jaisalmer city.
             </p>
-            <WelcomeStory compact />
-            <Link
-              href="/about"
-              className="mt-8 flex w-fit items-center gap-2 text-xs uppercase tracking-[0.18em] text-terracotta"
-            >
-              Our story <MoveRight size={16} />
-            </Link>
+            <p className="mt-5 text-lg leading-8 text-ink/70">
+              Nestled amidst the peaceful Thar Desert, Dangri offers a beautiful
+              blend of desert charm, comfort, luxury, and authentic Rajasthani
+              hospitality. Our thoughtfully designed camps provide the perfect
+              setting to relax and experience the magic of the golden dunes.
+            </p>
+            <p className="mt-5 text-lg leading-8 text-ink/70">
+              Enjoy authentic Rajasthani cuisine, vibrant folk music and dance,
+              traditional cultural performances, bonfire evenings, and
+              unforgettable nights beneath a million stars. Adventure seekers
+              can experience the Thar through camel safaris and thrilling jeep
+              dune-bashing.
+            </p>
+            <p className="mt-5 text-lg leading-8 text-ink/70">
+              Whether youre looking for a romantic escape, family holiday,
+              cultural experience, or desert adventure, Dangri Desert Safari
+              Camps promises an unforgettable stay in the heart of Rajasthans
+              Thar Desert.
+            </p>
           </Reveal>
         </div>
       </section>
-            <BannerCarousel />
+      <BannerCarousel />
       <Packages />
       <StayHighlights />
-      <Upcoming />
       <OurFood />
+      <HomeDiscover />
+      <Upcoming />
       <Testimonial />
       <section className="bg-paper px-5 py-20 md:px-10 md:py-28">
         <div className="mx-auto flex max-w-350 flex-col justify-between gap-8 border-t border-ink/20 pt-6 md:flex-row">

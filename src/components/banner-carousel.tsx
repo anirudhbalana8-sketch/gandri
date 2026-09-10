@@ -31,6 +31,22 @@ const banners = [
     link: "/contact",
     cta: "Plan your visit",
   },
+   {
+    image: "/images/THAR-SEMI-SUITS-OUTFIT.jpg",
+    alt: "A warm desert camp at golden hour",
+    eyebrow: "A little further from ordinary",
+    title: "Make Outfit wonder.",
+    link: "/contact",
+    cta: "Plan your visit",
+  },
+  {
+    image: "/images/THAR-SEMI-SUITS-ROOM.png",
+    alt: "A warm desert camp at golden hour",
+    eyebrow: "A little further from ordinary",
+    title: "make room wonder.",
+    link: "/contact",
+    cta: "Plan your visit",
+  },
 ];
 
 export function BannerCarousel() {
