@@ -1,9 +1,10 @@
-
+import { HomePage } from "@/components/home";
+import { PageFrame } from "@/components/site";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <h1 className="text-3xl font-bold">OOps Website is down</h1>
-    </div>
+    <PageFrame>
+      <HomePage />
+    </PageFrame>
   );
 }
